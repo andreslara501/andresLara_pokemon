@@ -1,0 +1,10 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+#content section {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to bottom, #e8fce6, #fcfefc);
+}
+article {
+  flex-grow: 1;
+}

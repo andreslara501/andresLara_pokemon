@@ -1,0 +1,22 @@
+.photo {
+    min-height: 200px;
+}
+.photo img {
+    width: 100%;
+    height: 200px;
+    opacity: 0;
+    position: relative;
+}
+.photo .loaded {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,15 @@
+header {
+    background: #d8e8d7;
+}
+    header > div {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+        header h1 {
+            margin: 0px;
+            font-size: 19px;
+        }

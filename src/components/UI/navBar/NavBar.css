@@ -1,0 +1,54 @@
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    @media (min-width: 0px) and (max-width: 800px) {
+        nav {
+            grid-template-columns: auto 1fr auto;
+        }
+    }
+    nav button {
+        border: 0px;
+        background: #1566bc;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: bold;
+        transition : all 300ms ease-out;
+    }
+    nav button:disabled {
+        opacity: 0.5;
+    }
+    nav button:hover {
+        background: #0b335e;
+    }
+    @media (min-width: 0px) and (max-width: 600px) {
+        nav button span {
+            display: none;
+        }
+    }
+    nav #page {
+        align-items: center;
+        display: grid;
+        text-align: center;
+        font-weight: bold;
+    }
+        @media (min-width: 0px) and (max-width: 600px) {
+            nav #page span {
+                display: none;
+            }
+        }
+        nav #page #progress {
+            background: #e8ddd1;
+            margin: 5px 10px 0 10px;
+            border-radius: 5px;
+        }
+            nav #page #progress #bar {
+                background: #ffbf00;
+                height: 5px;
+                transition : all 600ms ease-out;
+                border-radius: 5px;
+            }

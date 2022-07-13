@@ -10,7 +10,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const CustomInput: FunctionComponent<InputProps> = function ({ value, type, ...rest }) {
     return (
         <div id="search">
-            <img src={search} />
+            <img src={search} alt="Search icon" />
             <input value={value} type={type} {...rest} />
         </div>
     )

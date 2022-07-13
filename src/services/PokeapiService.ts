@@ -23,7 +23,7 @@ const getFilterPokemons = async(page:number, query:string) => {
             }
 
             const filterPokemons = pokemons.filter((pokemon) => {
-                if(pokemon["name"].toUpperCase().includes(query.toUpperCase())) return pokemon
+                return pokemon["name"].toUpperCase().includes(query.toUpperCase()) ? pokemon : false;
             });
 
             localStorage.setItem('REACT_POKEMONS_COUNTER', JSON.stringify(filterPokemons.length));
